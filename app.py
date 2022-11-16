@@ -29,7 +29,7 @@ sales_per_store['sale_dollars_percentage'] = sales_per_store['sale_dollars']\
 sales_per_store['store_number'] = sales_per_store['store_number'].astype(str)
 
 # %% app.ipynb 3
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8))
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 8))
 
 x_1 = most_popular.zip_code
 
