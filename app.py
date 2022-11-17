@@ -29,7 +29,7 @@ sales_per_store['sale_dollars_percentage'] = sales_per_store['sale_dollars']\
 sales_per_store['store_number'] = sales_per_store['store_number'].astype(str)
 
 # %% app.ipynb 3
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 8))
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 7))
 
 x_1 = most_popular.zip_code
 
@@ -61,3 +61,4 @@ ax1.set_title("Most popular item per zipcode in the period between 2016-2019")
 ax2.set_title("Percentage of sales per store in the period between 2016-2019")
 fig.set_tight_layout(True)
 st.pyplot(fig)
+st.set_page_config(page_title="PopViz")
