@@ -60,5 +60,5 @@ sns.barplot(x=x_2, y=y_2, palette="pastel", ax=ax2).set(
 ax1.set_title("Most popular item per zipcode in the period between 2016-2019")
 ax2.set_title("Percentage of sales per store in the period between 2016-2019")
 fig.set_tight_layout(True)
+st.set_page_config(page_title="PopularViz")
 st.pyplot(fig)
-st.set_page_config(page_title="PopViz")
