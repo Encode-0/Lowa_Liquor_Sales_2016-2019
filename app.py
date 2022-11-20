@@ -29,7 +29,7 @@ sales_per_store['sale_dollars_percentage'] = sales_per_store['sale_dollars']\
 sales_per_store['store_number'] = sales_per_store['store_number'].astype(str)
 
 # %% app.ipynb 3
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 7))
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(25, 12))
 
 x_1 = most_popular.zip_code
 
@@ -45,7 +45,7 @@ y_2 = (sales_per_store
 
 hue = most_popular.item_description
 
-sns.scatterplot(x=x_1, y=y_1, hue=hue, legend=False, ax=ax1).set(
+sns.scatterplot(x=x_1, y=y_1, hue=hue, legend='brief, ax=ax1).set(
     xlabel='Zip Code', 
     ylabel='Bottles Sold'
 )
@@ -56,7 +56,7 @@ sns.barplot(x=x_2, y=y_2, palette="pastel", ax=ax2).set(
     ylabel='Store Number'
 )
 
-plt.grid()
+ax1.legend(bbox_to_anchor= (1,1), fontsize=10, loc=2)
 ax1.set_title("Most popular item per zipcode in the period between 2016-2019")
 ax2.set_title("Percentage of sales per store in the period between 2016-2019")
 fig.set_tight_layout(True)
