@@ -45,7 +45,7 @@ y_2 = (sales_per_store
 
 hue = most_popular.item_description
 
-sns.scatterplot(x=x_1, y=y_1, hue=hue, legend='brief, ax=ax1).set(
+sns.scatterplot(x=x_1, y=y_1, hue=hue, legend='brief', ax=ax1).set(
     xlabel='Zip Code', 
     ylabel='Bottles Sold'
 )
